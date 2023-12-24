@@ -28,7 +28,7 @@ string[] NewArray(string[] array)
         }
         i++;
     }
-    
+
     string[] newArr = new string[sizeNewArr];
     int j = 0;
     for (i = 0; i < array.Length; i++)
@@ -50,8 +50,8 @@ string[] array = CreateArray(size);
 Console.WriteLine($"Заданный массив:[ {string.Join(", ", array)} ]");
 string[] newArray = NewArray(array);
 
-if (newArray.Length>0)
-Console.WriteLine($"Итоговый массив:[ {string.Join(", ", newArray)} ]");
+if (newArray.Length > 0)
+    Console.WriteLine($"Итоговый массив:[ {string.Join(", ", newArray)} ]");
 else Console.WriteLine("\nЭлементы, длина сток которых меньше, либо равна 3 символам, отсутсвуют!\n");
 
 
